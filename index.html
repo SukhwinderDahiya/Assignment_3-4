@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Booking Request Form</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+	<div>
+	<img src="./logo/1plane-globe-travel.png" alt="Travel Booking" class="logoh2">
+	<h2 class="logo" ><strong>T</strong>ravel <strong>B</strong>ooking</h2>
+</div>
+	<div class="header">
+		<h2 align="center" >Travel Booking Request Form</h2>
+	</div>
+	<form id="form" class="form" onsubmit="return validateForm(this)"  method="post" >
+		<div class="form-control newLeft">
+			<label for="firstname">First Name</label>
+			<input title="First Name" class="fName" type="text" placeholder="First Name" id="firstname" pattern=[A-Z\sa-z]{3,20} />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control newLeft ">
+			<label for="username">Last Name</label>
+			<input title="Last Name" class="fName" type="text" placeholder="Last Name" id="lastname" pattern=[A-Z\sa-z]{3,20} />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+<br>
+		
+
+		<div class="form-control newLeft ">
+			<label for="username">Best Contact Number</label>
+			<input class="sInput" title="Contact Number" type="tel" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) id="cnumber" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control newLeft ">
+			<label for="username">Mailing Address</label>
+			<textarea class="sInput" title="Address" id="address" placeholder="Address" ></textarea>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+<br>
+		<div class="form-control newLeft">
+			<label for="username">Email</label>
+			<input type="email" title="Email" placeholder="abc@gmail.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control newLeft">
+			<label for="username">Verify Email</label>
+			<input type="email" title="Verify Email" placeholder="abc@gmail.com" id="email2" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		
+<hr>
+		<br>
+		<div class="form-control newLeft ">
+			<label for="username">Total Number Of Adults</label>
+			<input class="fName" type="Number" title="Number of Adults" placeholder="Total Number Of Adults" id="adults" min="0" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+
+		<div class="form-control newLeft ">
+			<label for="username">Adults Name</label>
+			<textarea class="sInput" id="adultsName" title="Adults Names" placeholder="Adults Names" ></textarea>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control newLeft ">
+			<label for="username">Total Number Of Children</label>
+			<input class="fName" type="Number" title="Number of children" placeholder="Total Number Of Children" id="children" min="0" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+
+		<div class="form-control newLeft ">
+			<label for="username">Children Name and Ages</label>
+			<textarea class="sInput" id="childrenName" title="children Names" placeholder="Children Names and Ages" ></textarea>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control newLeft">
+			<label for="firstname">Type Of Travel</label>
+			<input class="fName" type="text" title="Type Of Travel" placeholder="Type Of Travel" id="typeTravel" pattern=[A-Z\sa-z]{3,20} />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		
+<hr>
+		<br>
+
+<div class="">
+	
+  <input type="checkbox" title="Privacy Policy" name="agree" id="agree" value="yes"/>
+  <label for="agree">I agree to the terms and conditions</label>
+  
+  <p class="pp">Your privacy is important to us and we have prepared this Privacy Policy to explain to you how we collect, use, and share information we obtain through your use of the Internet sites, applications and services ('services") that are operated by, controlled by or are affiliate with Mobile Nations, including without limitation SB Nation, The Verge, Polygon, Curbed, Eater, Racked, and Vox.com (collectively, "we," "us" or "our").</p>
+  <p class="pp"> This Privacy Policy does not govern our use of any information you provide to us when you call us, write to us, or communicate with us in any manner other than through the Services. Because the Internet is global, information about you that we collect or that you submit may be transferred to, processed in, and held in countries (including the United States) other than the one in which you reside. 
+  </p>
+  <p class="pp">By using the Services, you explicitly consent to such use of your information and agree to the terms of this Privacy Policy.</p>
+  
+  <div style="visibility:hidden; color:red" id="agree_chk_error">
+  Can't proceed as you didn't agree to the terms!
+  </div>
+
+    <div>
+  </div>
+
+
+
+ <div class="center">
+    <div id="captchaBackground">
+      <span id="captcha">captcha text</span>
+      <input id="textBox" type="text" name="text">
+      <div id="buttons">
+        <input class="subbutton" id="csubmit" type="submit">
+        <button class="refbutton" id="refresh" type="submit">Refresh</button>
+      </div> 
+      <span id="output"></span>
+    </div>
+  </div>
+		<button formaction="/index.html">Submit</button>
+	</form>
+</div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

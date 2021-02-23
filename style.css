@@ -1,0 +1,223 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0072ff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 600px;
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+
+    .header h2 {
+        margin: 0;
+        margin: 0;
+    font-size: 15px;
+    color: darkolivegreen;
+    }
+.logo{
+
+    margin: auto;
+    padding: auto;
+    color: cadetblue;
+    font-size: 40px;
+    font-weight: inherit;
+
+
+}
+.logoh2{
+    float: left;
+}
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .form-control label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .form-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form-control textarea {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+.pp{
+    text-align: justify;
+    font-size: 12px;
+}
+/*Validation css*/
+
+        .form-control input:focus {
+            outline: 0;
+            border-color: #777;
+        }
+
+         .form-control textarea:focus {
+            outline: 0;
+            border-color: #777;
+        }
+
+
+    .form-control.success input {
+        border-color: #2ecc71;
+    }
+
+ .form-control.success textarea {
+        border-color: #2ecc71;
+    }
+
+
+    .form-control.error input {
+        border-color: #e74c3c;
+    }
+
+    .form-control.error textarea {
+        border-color: #e74c3c;
+    }
+
+    .form-control i {
+        visibility: hidden;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+    }
+
+    .form-control.success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+    }
+
+    .form-control.error i.fa-exclamation-circle {
+        color: #e74c3c;
+        visibility: visible;
+    }
+
+    .form-control small {
+        color: #e74c3c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .form-control.error small {
+        visibility: visible;
+    }
+
+.form button {
+    background-color: #0072ff;
+    border: 2px solid #0072ff;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+/*Captcha Css*/
+.refbutton{
+        background: green !important;
+        border: 2px solid #0072ff !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+        font-size: 10px !important;
+        padding: 5px !important;
+        margin-top: 6px !important;
+        width: auto!important;
+
+}
+
+.subbutton{
+        background: chocolate !important;
+        border: 2px solid #0072ff !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+        font-size: 9px !important;
+        padding: 5px !important;
+        margin-top: 6px !important;
+        width: auto!important;
+
+}
+
+#captchaBackground {
+  height: 120px;
+  width: 150px;
+  background-color: #7b807f;
+ /* background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#captcha {
+  margin-bottom: 0em;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.center {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#submit {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#textBox {
+  height: 20px;
+  width: 80px;
+}
+.redText {
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+}
+.greenText {
+  color: #1a3815;
+  font-weight: bold;
+   font-size: 10px;
+
+}
